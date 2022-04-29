@@ -1,10 +1,16 @@
 # MOD3-Proj1
 
-Projeto para construir o back-end no modelo CRUD de um cadastro de personagens, dessa vez utilizando o Moongose como Database.
+Projeto para construir o back-end no modelo CRUD de um cadastro de personagens, dessa vez utilizando o Moongose como Database e o Swagger para visualizar a API
 
 ### 📋 Pré-requisitos
 
-Para rodar este projeto em sua máquina será necessário instalar algumas dependências, você pode vê-las com mais detalhes no [package.json](https://github.com/leotinoco7/MOD3-PROJ3/blob/main/package.json). <br><br>
+Este projeto conta com deploy no Render, você pode acessar a API clicando abaixo:
+
+```
+[API Ricky and Morty - Render](https://mod3-proj3-api.onrender.com/characters/api-docs)
+```
+
+Você tambem pode rodar a aplicação localmente, mais detalhes no [package.json](https://github.com/leotinoco7/MOD3-PROJ3/blob/main/package.json). <br><br>
 
 Código de instalação:
 
@@ -22,6 +28,7 @@ npm run dev
 
 - NodeJS - Engine
 - Mongoose - DataBase
+- Swagger - API
 
 ## ✒️ Autores
 
