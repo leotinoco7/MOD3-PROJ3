@@ -27,8 +27,8 @@ npm run dev
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-- **Leonardo Tinoco** - [umdesenvolvedor](http://linktr.ee/leotinoco7)
-- **Mayara Schmidt** - [fulanodetal](https://github.com/mayaraschmidt)
+- **Leonardo Tinoco** - [LINKTREE](http://linktr.ee/leotinoco7)
+- **Mayara Schmidt** - [GITHUB](https://github.com/mayaraschmidt)
 
 ## 📄 Licença
 
