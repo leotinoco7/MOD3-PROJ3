@@ -80,8 +80,11 @@
         "requestBody": {
           "content": {
             "application/json": {
+              "schema": {
+                "type": "object"
+              },
               "examples": {
-                "Paletas": {
+                "Personagens": {
                   "value": {
                     "nome": "Summer Smith",
                     "desc": "Irmã.",
@@ -129,7 +132,7 @@
                 "type": "object"
               },
               "examples": {
-                "Paletas": {
+                "Personagens": {
                   "value": {
                     "nome": "Summer Smith",
                     "desc": "Irmã",
@@ -160,14 +163,13 @@
     "/delete/{id}": {
       "delete": {
         "summary": "Apagar um personagem pelo ID",
-        "description": "Rota responsável por apagar um  personagem pelo ID",
-        "tags": ["Paletas"],
+        "description": "Rota responsável por apagar um personagem pelo ID",
+        "tags": ["Personagens"],
         "parameters": [
           {
-            "nome": "id",
+            "name": "id",
             "in": "path",
-            "desc": "Id do personagem para deleção",
-            "foto": "Foto do personagem",
+            "description": "Id do personagem para deleção",
             "required": true
           }
         ],
@@ -177,6 +179,24 @@
           },
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "components": {
+      "Characters": {
+        "characters": {
+          "type": "object",
+          "properties": {
+            "nome": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string"
+            },
+            "foto": {
+              "type": "string"
+            }
           }
         }
       }
