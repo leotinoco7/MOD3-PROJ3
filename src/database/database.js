@@ -2,13 +2,10 @@ const mongoose = require('mongoose');
 
 function connectToDatabase() {
   mongoose
-    .connect(
-      'mongodb+srv://root:blue2022@characters.h61hb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      },
-    )
+    .connect(process.env.DATABASE_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
     .then(() => {
       console.log('MONGO DB CONECTADO');
     })

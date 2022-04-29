@@ -34,10 +34,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Characters"
-                  }
+                  "type": "object"
                 }
               }
             }
@@ -67,8 +64,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "$ref": "#/components/schemas/Characters"
+                  "type": "object"
                 }
               }
             }
@@ -84,9 +80,6 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Characters"
-              },
               "examples": {
                 "Paletas": {
                   "value": {
@@ -108,8 +101,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "$ref": "#/components/schemas/Characters"
+                  "type": "object"
                 }
               }
             }
@@ -133,9 +125,6 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Characters"
-              },
               "examples": {
                 "Paletas": {
                   "value": {
@@ -157,8 +146,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "$ref": "#/components/schemas/Characters"
+                  "type": "object"
                 }
               }
             }
