@@ -8,6 +8,7 @@ const {
 } = require('../middlewares/characters.middleware');
 
 router.get('/', charactersController.findCharactersController);
+
 router.get(
   '/find/:id',
   validId,

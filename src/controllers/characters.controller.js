@@ -10,7 +10,7 @@ const findCharactersController = async (req, res) => {
   res.send(allCharacters);
 };
 
-const findCharacterByIdController = async (req, res) => {
+const findCharactersByIdController = async (req, res) => {
   const idParam = req.params.id;
 
   const chosenCharacter = await charactersService.findCharacterByIdService(
@@ -64,7 +64,7 @@ const deleteCharacterController = async (req, res) => {
 module.exports = {
   homeCharacterController,
   findCharactersController,
-  findCharacterByIdController,
+  findCharactersByIdController,
   addCharacterController,
   updateCharacterController,
   deleteCharacterController,
