@@ -1,36 +1,36 @@
-const Personagem = require('../models/Characters');
+const Character = require('../models/Characters');
 
-const findPersonagensService = async () => {
-  const personagens = await Personagem.find();
-  return personagens;
+const findCharactersService = async () => {
+  const characters = await Character.find();
+  return characters;
 };
 
-const findPersonagemByIdService = async (id) => {
-  const personagem = await Personagem.findById(id);
-  return personagem;
+const findCharacterByIdService = async (id) => {
+  const character = await Character.findById(id);
+  return character;
 };
 
-const addPersonagemService = async (newPersonagem) => {
-  const PersonagemCriado = await Personagem.create(newPersonagem);
-  return PersonagemCriado;
+const addCharacterService = async (newCharacter) => {
+  const characterCriado = await Character.create(newCharacter);
+  return characterCriado;
 };
 
-const updatePersonagemService = async (id, personagemEdited) => {
-  const personagemAtualizado = await Personagem.findByIdAndUpdate(
+const updateCharacterService = async (id, characterEdited) => {
+  const characterAtualizado = await Character.findByIdAndUpdate(
     id,
-    personagemEdited,
+    characterEdited,
   );
-  return [personagemAtualizado, personagemEdited];
+  return [characterAtualizado, characterEdited];
 };
 
-const deletePersonagemService = async (id) => {
-  return await Personagem.findByIdAndDelete(id);
+const deleteCharacterService = async (id) => {
+  return await Character.findByIdAndDelete(id);
 };
 
 module.exports = {
-  findPersonagensService,
-  findPersonagemByIdService,
-  addPersonagemService,
-  updatePersonagemService,
-  deletePersonagemService,
+  findCharactersService,
+  findCharacterByIdService,
+  addCharacterService,
+  updateCharacterService,
+  deleteCharacterService,
 };
