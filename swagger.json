@@ -15,7 +15,7 @@
       "description": "API de teste"
     },
     {
-      "url": "http://localhost:3000/characters",
+      "url": "https://mod3-proj3-api.onrender.com/characters",
       "description": "API de produção"
     }
   ],
