@@ -53,19 +53,19 @@ const deleteCharacterController = async (req, res) => {
 
   const chosenCharacter = charactersService.findCharacterByIdService(idParam);
 
-  if (!chosenPersonagem) {
+  if (!chosenCharacter) {
     return res.status(404).send({ message: 'personagem não encontrado!' });
   }
 
-  await charactersService.deletePersonagemService(idParam);
+  await charactersService.deleteCharacterService(idParam);
   res.send({ message: 'personagem deletado com sucesso!' });
 };
 
 module.exports = {
-  homePersonagemController,
-  findPersonagensController,
-  findPersonagemByIdController,
-  addPersonagemController,
-  updatePersonagemController,
-  deletePersonagemController,
+  homeCharacterController,
+  findCharactersController,
+  findCharacterByIdController,
+  addCharacterController,
+  updateCharacterController,
+  deleteCharacterController,
 };

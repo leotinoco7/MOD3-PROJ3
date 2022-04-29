@@ -1,40 +1,36 @@
 const express = require('express');
 const router = express.Router();
 
-const personagensController = require('../controllers/characters.controller');
+const charactersController = require('../controllers/characters.controller');
 const {
   validId,
   validObjectBody,
 } = require('../middlewares/characters.middleware');
 
-router.get('/', personagensController.homePersonagemController);
+router.get('/', charactersController.findCharactersController);
 router.get(
-  '/find-personagens',
-  personagensController.findPersonagensController,
-);
-router.get(
-  '/find-personagem/:id',
+  '/find/:id',
   validId,
-  personagensController.findPersonagemByIdController,
+  charactersController.findCharactersByIdController,
 );
 
 router.post(
-  '/add',
+  '/create',
   validObjectBody,
-  personagensController.addPersonagemController,
+  charactersController.addCharacterController,
 );
 
 router.put(
   '/update/:id',
   validId,
   validObjectBody,
-  personagensController.updatePersonagemController,
+  charactersController.updateCharacterController,
 );
 
 router.delete(
   '/delete/:id',
   validId,
-  personagensController.deletePersonagemController,
+  charactersController.deleteCharacterController,
 );
 
 module.exports = router;
