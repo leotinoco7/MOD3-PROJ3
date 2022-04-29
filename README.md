@@ -1,4 +1,4 @@
-# MOD3-Proj1
+# MOD3-Proj3 - API RICKY AND MORTY
 
 Projeto para construir o back-end no modelo CRUD de um cadastro de personagens, dessa vez utilizando o Moongose como Database e o Swagger para visualizar a API
 
